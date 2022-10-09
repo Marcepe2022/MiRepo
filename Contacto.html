@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosZapa.css">
+    <script src="js/funciones.js"></script>
+    <script src="js/validar.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="contenedor">
+        <header>
+            <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
+                <div><img src="img/descarga.png" alt=""></div>
+                <nav >
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
+                
+                </nav> 
+            </div>
+        </header> 
+
+
+<h2>Complete el Formulario</h2>
+<form action="" id="contacto-frm" class="formulario" name="contacto_frm">
+<table >
+    <tr>
+        <td><label for="name">Nombre: </label></td>
+        <td><input type="text" name="nombre" id="nombre" required autocomplete="off"></td>
+    </tr>
+    <tr>
+        
+        <td><label from="apellido">Apellido</label></td>
+        <td><input type="text" name="apellido" id="apellido" class="formulario__input" value=""  size="30" required autocomplete="off" onkeyup="validateapellido(apellido)" >
+        </td>
+        
+    </tr>
+    <tr>
+        <td><label for="email">Email: </label></td>
+        <td><input type="email" name="email" id="email" required autocomplete="off" class="formulario__input"></td>
+    </tr>
+    <tr>
+        <td> <label for="telefono">Telefono: </label></td>
+        <td> <input type="tel" id="phone" name="phone" class="formulario__input"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+            <small>Format: 11-4456-7890</small>
+        </td>
+    </tr>
+    <tr><td> <label for="motivos">Motivo de contacto</label></td>
+    <td>
+        <select name="motivo" id="motivo">
+            <option value="Ventas">Ventas</option>
+            <option value="Reparaciones">Reparaciones</option>
+            <option value="Sugerencia">Sugerencia</option>
+            <option value="Otro">Otro</option>
+          </select>
+
+    </td></tr>
+    
+    <tr>
+        <td>   <label for="comentarios">Comentarios: </label>       
+        <td><textarea cols="50" rows="4" class="formulario__input">  </textarea></td>
+
+    </tr>
+    <tr>
+        <td>     <input type="submit" value="Enviar" class="formulario__submit" id="enviar" name="enviar_btn" >       </td>
+    </tr>
+
+</table>
+</form>
+<DIV class="item item4" align="center">La mejor zapateria del barrio..... 
+    <br><p>Atendida por sus propios duenos</p>
+</DIV>
+</div>
+
+</body>
+</html>
