@@ -2,47 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilo.css">
     <title>Document</title>
+<style>
+    label {
+        display:  block;
+        float: left;
+        width: 100px; 
+    }
+</style>
+
+<script src="js/validacionregistro.js"></script>
+
 </head>
+
 <body>
-    
-    <div id="contenedor">
-<header>
-    <h1 style="text-align: center ;">ZAPATERIA</h1>
-
-</header>
-<menu>
-
-<h2>Complete el Formulario</h2>
-
-
-
-<table>
-    <tr>
-        <td>Nombre</td>
-        <td> <input type="text" name="nombre" id="name"></td>
-    </tr>
-    <tr>
-        <td>Apellido</td>
-        <td><input type="text" name="apellido" id="apellido"></td>
-    </tr>
-    <tr>
-        <td>mail</td>
-        <td><input type="email" name="mail" id="mail"></td>
-    </tr>
-    <tr>
-        <td>
-        <input  type="button" value="enviar">
-        </td>
-    </tr>
-    
-</table>
-</menu>
-<footer>Todos los derechos reservados CopyRight 2022</footer>
-</div>
-
+    <h1>Registrese</h1>
+        <form name ="formularioRegistro" class="formularioTipo1" method="post" action="index.html" novalidate="">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id = 'nombre' name="nombre"/>
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" id = 'apellido' name="apellido"/>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required autocomplete="off" >
+            </div>
+            <div>
+                <label for="pass1">Clave</label>
+                <input type="password" name="pass1" id="pass1" required>
+            </div>
+            <div>
+                <label for="pass2">Repita clave</label>
+                <input type="password" name="pass2"id="pass2" required>
+            </div>
+            <label><input type="submit" value="Enviar"><input type="reset" value="Cancelar"></label>
+        </form>
+        
+   
 </body>
 </html>
