@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapateria</title>
+    <link rel="icon" href="img/descarga.png">
+    <link rel="stylesheet" href="css/estilosZapa.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
+</head>
+<body>
+    <header>
+        <div><contador></contador></div>
+        <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
+            <div><img src="img/descarga.png" alt=""></div>
+            <nav >
+                <a style="background-color: rgba(147, 203, 56, 0.254);" href="zapateria.html">Home</a>
+    
+               <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Venta</a>
+               <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
+               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
+               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
+               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
+               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+            
+            </nav> 
+        </div>
+    </header> 
+
+    <div id="ejemploVM" class="item item1">
+        <h1> {{ titulo }}</h1>
+        <SPAN>Ud ha comrpado al momento estos articulos</SPAN>
+        <ul>
+            <!-- Recorre items -->
+            <li v-for="item  in items">
+              
+                
+                   {{item.nombre}} {{ item.cantidad }}
+              
+            </li>
+        </ul>
+        <h4>Total: {{sumaritems}}</h4>
+        <input type="button" value="confirmar">
+<input type="button" value="Vaciar Carrito">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="comprados.js"></script>
+    <footer class="footer">
+  
+        <div id="current_date" class="footer"></p>
+            <script>
+                      document.getElementById("current_date").innerHTML = Date();
+                      </script>
+                  </div>
+
+    </footer>
+</body>
+
+</html>
+
