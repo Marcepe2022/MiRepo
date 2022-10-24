@@ -111,3 +111,32 @@
         botonEnviar = document.contacto_frm.enviar_btn;
         botonEnviar.onclick = validarForm;
       }
+	  
+	  
+	 function formatoFecha() {
+    var fecha=date();
+    const map = {
+        dd: fecha.getDate(),
+        mm: fecha.getMonth() + 1,
+        yy: fecha.getFullYear().toString().slice(-2),
+        yyyy: fecha.getFullYear()
+    }
+
+    return formato.replace(/dd|mm|yy|yyy/gi, matched => map[matched]);
+}
+
+function  getTemp() {
+    
+  fetch('https://goweather.herokuapp.com/weather/buenos%20aires')
+         .then(res => {
+             return res.json()
+         })
+         .then(post => {
+             const temp = post.temperature ;
+             const tempdes =post.description
+             document.write('El tiempo en Buenos Aires: ' + temp +  ' - ' + tempdes);
+             console.log(post.temperature);
+             console.log(post.description);
+             
+         })
+ }
