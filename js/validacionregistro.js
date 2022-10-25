@@ -62,7 +62,7 @@
                                     if (formulario[i].value != document.getElementById("pass2").value){
                                         console.log(document.getElementById("pass2").value);
                                         console.log(formulario[i].value);
-                                        mensajesError.push('- Las contrañas no coinciden.');
+                                        mensajesError.push('- Las contraseñas no coinciden.');
                                         verificado= false;
                                     }
                                 } else {
@@ -76,9 +76,8 @@
                             }
             
             if (verificado == true) {
-                
-                alert(mensajesError.join('\n ')+'Registro exitoso.');
-                formulario.submit();
+                               
+   
             } else { 
                 alert(mensajesError.join('\n '));
             }
