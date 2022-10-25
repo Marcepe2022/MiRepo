@@ -14,19 +14,23 @@
 
 <body>
     <div id="contenedor">
-    <header>
-        <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
-            <div><img src="img/descarga.png" alt=""></div>
-            <nav >
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
-            
-            </nav> 
-        </div>
-    </header> 
+        <header>
+            <div><contador></contador></div>
+            <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
+                <div><img src="img/descarga.png" alt=""></div>
+                <nav >
+                    <a style="background-color: rgba(147, 203, 56, 0.254);" href="zapateria.html">Home</a>
+        
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Venta</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
+                   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+                
+                </nav> 
+            </div>
+        </header> 
     <h2>Complete el Formulario</h2>
         <form name ="formularioRegistro" id="formularioRegistro" class="formularioTipo1" method="post" action="https://formspree.io/f/xpznjgbo" novalidate="">
             <div class="d1">
@@ -52,9 +56,15 @@
             <label><input type="submit" value="Enviar"></label>
 
         </form>
-        <div class="item item4" align="center">La mejor zapateria del barrio..... 
-            <br><p>Atendida por sus propios duenos</p>
-        </div>  
+        <footer class="footer">
+  
+            <div id="current_date" class="footer"></p>
+                <script>
+                          document.getElementById("current_date").innerHTML = Date();
+                          </script>
+                      </div>
+        
+        </footer>
 </div> 
 
 <script>
