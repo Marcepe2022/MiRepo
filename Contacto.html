@@ -12,19 +12,23 @@
 <body>
     
 <div id="contenedor">
-        <header>
-            <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
-                <div><img src="img/descarga.png" alt=""></div>
-                <nav >
-                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
-                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
-                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
-                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
-                   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
-                
-                </nav> 
-            </div>
-        </header> 
+    <header>
+        <div><contador></contador></div>
+        <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
+            <div><img src="img/descarga.png" alt=""></div>
+            <nav >
+                <a style="background-color: rgba(147, 203, 56, 0.254);" href="zapateria.html">Home</a>
+    
+               <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Venta</a>
+               <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
+               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
+               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
+               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
+               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+            
+            </nav> 
+        </div>
+    </header> 
 
 
 <h2>Complete el Formulario</h2>
@@ -48,7 +52,7 @@
     <tr>
         <td> <label for="telefono">Telefono: </label></td>
         <td> <input type="tel" id="phone" name="phone" class="formulario__input"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
             required>
             <small>Format: 11-4456-7890</small>
         </td>
@@ -75,9 +79,15 @@
 
 </table>
 </form>
-<DIV class="item item4" align="center">La mejor zapateria del barrio..... 
-    <br><p>Atendida por sus propios duenos</p>
-</DIV>
+<footer class="footer">
+  
+    <div id="current_date" class="footer"></p>
+        <script>
+                  document.getElementById("current_date").innerHTML = Date();
+                  </script>
+              </div>
+
+</footer>
 </div>
 
 </body>
