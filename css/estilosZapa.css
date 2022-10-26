@@ -1,4 +1,6 @@
 
+        
+        
         nav ul li {
             list-style: none;
             margin-left: 75px;
@@ -84,3 +86,17 @@
              grid-area: precio;
              background-color: rgb(10, 179, 160);
           }
+
+        
+        .l1{
+            display:  block;
+            float: left;
+            width: 100px;
+        }
+
+        .d1{
+            margin-top: .5em;
+            margin-bottom: .5em;
+            margin-left: .5em;
+            margin-right: .5em;
+        }
