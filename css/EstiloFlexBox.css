@@ -1,0 +1,24 @@
+.flex-container {
+    font-family: 'JetBrains Mono', monospace;
+    
+    background-color: #d9e3ec;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items: start;
+    height: auto;
+  }
+  
+  .flex-container > div {
+    align-items: start;
+    background-color: #f1f1f1;
+    height: fit-content;
+    margin: 10px;
+    padding: 20px;
+    font-size: 13px;
+ 
+  }
+
+  .item {
+      flex: none;
+  }
