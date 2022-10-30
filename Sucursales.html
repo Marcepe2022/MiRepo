@@ -7,22 +7,21 @@
     <link rel="stylesheet" href="css/Estilos.css">
     
 	<link rel="stylesheet" href="css/Estiloresponsive.css">
-    <title>Document</title>
+    <title>Zapateria</title>
 </head>
 <body>
   <header class="header">
     <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
       <div><img src="img/descarga.png" alt=""></div>
       <nav >
-              <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
-
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="venta.html">Venta</a>
-         <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
-         <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
-         <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
-         <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
-         <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
-      
+        <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
+        <a style="background-color: rgba(147, 203, 56, 0.254);" href="venta.html">Venta</a>
+        <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
+        <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
+        <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
+        <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
+        <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+		    <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Clima.html">Clima</a> 
       </nav> 
     </div>
   </header>
@@ -67,12 +66,16 @@
     </div>
     <footer class="footer">
   
-			<div id="current_date" class="footer"></p>
-				<script>
-						  document.getElementById("current_date").innerHTML = Date();
-						  </script>
-					  </div>
-
-		</footer>
+      <div id="current_date" class="footer"></p>
+          <script>
+                  
+  var fecha=new Date().toLocaleDateString();
+  
+  
+                    document.getElementById("current_date").innerHTML = fecha;
+                    </script>
+                </div>
+  
+  </footer>
 </body>
 </html>
