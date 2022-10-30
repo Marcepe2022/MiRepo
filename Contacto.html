@@ -12,23 +12,21 @@
 <body>
     
 <div id="contenedor">
-    <header>
-        <div><contador></contador></div>
+    <header class="header">
         <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
             <div><img src="img/descarga.png" alt=""></div>
-            <nav >
-                <a style="background-color: rgba(147, 203, 56, 0.254);" href="zapateria.html">Home</a>
-    
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Venta</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
-               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
-            
-            </nav> 
+   				<nav >
+			       <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="venta.html">Venta</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Clima.html">Clima</a> 
+				</nav> 
         </div>
-    </header> 
+    </header>
 
 
 <h2>Complete el Formulario</h2>
@@ -52,7 +50,7 @@
     <tr>
         <td> <label for="telefono">Telefono: </label></td>
         <td> <input type="tel" id="phone" name="phone" class="formulario__input"
-            pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             required>
             <small>Format: 11-4456-7890</small>
         </td>
@@ -83,7 +81,11 @@
   
     <div id="current_date" class="footer"></p>
         <script>
-                  document.getElementById("current_date").innerHTML = Date();
+                
+var fecha=new Date().toLocaleDateString();
+
+
+                  document.getElementById("current_date").innerHTML = fecha;
                   </script>
               </div>
 
