@@ -19,48 +19,51 @@
             <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
                 <div><img src="img/descarga.png" alt=""></div>
                 <nav >
-                    <a style="background-color: rgba(147, 203, 56, 0.254);" href="zapateria.html">Home</a>
-        
-                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Venta</a>
-                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
-                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
-                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
-                   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
-                   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
-                
-                </nav> 
+                    <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
+                    <a style="background-color: rgba(147, 203, 56, 0.254);" href="venta.html">Venta</a>
+                    <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
+                    <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
+                    <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
+                    <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
+                    <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+                    <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Clima.html">Clima</a> 
+                 </nav> 
             </div>
         </header> 
     <h2>Complete el Formulario</h2>
-        <form name ="formularioRegistro" id="formularioRegistro" class="formularioTipo1" method="post" action="https://formspree.io/f/xpznjgbo" novalidate="">
-            <div class="d1">
-                <label for="nombre" class="l1" name="nombre">Nombre</label>
-                <input type="text" id = 'nombre' name="nombre"/>
-            </div>
-            <div class="d1">
-                <label for="apellido" class="l1" name="apellido">Apellido</label>
-                <input type="text" id = 'apellido' name="apellido"/>
-            </div>
-            <div class="d1">
-                <label for="email" class="l1" name="email">Email: </label>
-                <input type="email" name="email" id="email" required autocomplete="off" >
-            </div>
-            <div class="d1">
-                <label for="pass1" class="l1" name="pass1">Clave</label>
-                <input type="password" name="pass1" id="pass1" required>
-            </div>
-            <div class="d1">
-                <label for="pass2" class="l1" name="pass2">Repita clave</label>
-                <input type="password" name="pass2"id="pass2" required>
-            </div>
-            <label><input type="submit" value="Enviar"></label>
+    <form name ="formularioRegistro" id="formularioRegistro" class="formularioTipo1" method="post" action="https://formspree.io/f/xpznjgbo" novalidate="">
+        <div class="d1">
+            <label for="nombre" class="l1" name="nombre">Nombre</label>
+            <input type="text" id = 'nombre' name="nombre"/>
+        </div>
+        <div class="d1">
+            <label for="apellido" class="l1" name="apellido">Apellido</label>
+            <input type="text" id = 'apellido' name="apellido"/>
+        </div>
+        <div class="d1">
+            <label for="email" class="l1" name="email">Email: </label>
+            <input type="email" name="email" id="email" required autocomplete="off" >
+        </div>
+        <div class="d1">
+            <label for="pass1" class="l1" name="pass1">Clave</label>
+            <input type="password" name="pass1" id="pass1" required>
+        </div>
+        <div class="d1">
+            <label for="pass2" class="l1" name="pass2">Repita clave</label>
+            <input type="password" name="pass2"id="pass2" required>
+        </div>
+        <label><input type="submit" value="Enviar"></label>
 
-        </form>
+    </form>
         <footer class="footer">
   
             <div id="current_date" class="footer"></p>
                 <script>
-                          document.getElementById("current_date").innerHTML = Date();
+                        
+        var fecha=new Date().toLocaleDateString();
+        
+        
+                          document.getElementById("current_date").innerHTML = fecha;
                           </script>
                       </div>
         
