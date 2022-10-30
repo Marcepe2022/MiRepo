@@ -3,76 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilosZapa.css">
-    <link rel="stylesheet" href="css/EstiloFlexBox.css">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
-
 </head>
-<script src="js/app.js"></script>
 <body>
     
 <div id="contenedor">
     <header class="header">
         <div class="item item1"><h1>CALZADOS ELEGANTES</h1>
             <div><img src="img/descarga.png" alt=""></div>
-            <nav >
-                <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
-
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="venta.html">Venta</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
-               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
-               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
-            
-            </nav> 
-
-            
+				<nav >
+			       <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="venta.html">Venta</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Clima.html">Clima</a> 
+				</nav> 
         </div>
     </header>
-
-
-<div class="flex-container">
-        <div>
-        <p> 
-        <strong>Nosotros:</strong>   
-        </p> 
-        <p> Somos una empresa 100% nacional, con más de 40 años de trayectoria en la comercialización de calzado e indumentaria.
-        Contamos con más de 20 Colaboradores y 3 sucursales.
-        Ofrecemos las mejores marcas y atención personalizada en nuestros locales.  <BR></BR> 
-        </p>
-        <p> 
-        <strong>Vendedores:</strong>   
-        </p>   
-        </div>
-    
-        <div  id="app0" >
-        </div>
-
-        <div  id="app1" >
-        </div>
-
-        <div  id="app2" >
-        </div>
-
-        <div  id="app3" >  
-        </div>
-
-
-
-
-</div>       
-
-
+<p align="center">
+    Zapatos realizados de forma artesanal en materiales nobles de hormas amplias y atemporales. Somos Hermanas Aguila, hacemos zapatos cómodos y coloridos estilo...
+</p>
 <footer class="footer">
   
     <div id="current_date" class="footer"></p>
         <script>
-                  document.getElementById("current_date").innerHTML = Date();
+                
+var fecha=new Date().toLocaleDateString();
+
+
+                  document.getElementById("current_date").innerHTML = fecha;
                   </script>
               </div>
+
+</footer>
 
 </footer>
 </div>
