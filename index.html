@@ -21,11 +21,11 @@
 				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
 				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
 				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
-				
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Clima.html">Clima</a> 
 				</nav> 
 			</div>
 		</header>
-		<article class="articulo"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet odio facere distinctio consequuntur laudantium quisquam, quasi porro quas, omnis animi unde veniam accusamus repellat, pariatur nesciunt. Optio sunt debitis, distinctio.</p></article>
+		<article class="articulo"><p>Zapatos realizados de forma artesanal en materiales nobles de hormas amplias y atemporales. Somos Hermanas Aguila, hacemos zapatos cómodos y coloridos estilo...</p></article>
 		<aside class="aside izquierda"><img src="img/shoe.jpg" alt=""></aside>
 		<aside class="aside derecha">	
 			<h2 >Sucurales en todo el pais</h2>
@@ -34,14 +34,13 @@
 			<div>bueno aires</div>
 		</aside>
 		
-		<footer class="footer">
-  
-			<div id="current_date" class="footer"></p>
-				<script>
-						  document.getElementById("current_date").innerHTML = Date();
-						  </script>
-					  </div>
-
+        <footer class="footer">
+  			<div id="current_date" class="footer"></p>
+			<script>
+        		var fecha=new Date().toLocaleDateString();
+ 	    		document.getElementById("current_date").innerHTML = fecha;
+			</script>
+			</div>
 		</footer>
 	</div>
 </body>
