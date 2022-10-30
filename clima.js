@@ -53,4 +53,3 @@ async function getWeatherByLocation(city){
 
      });
 
-
