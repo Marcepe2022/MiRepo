@@ -26,6 +26,8 @@
            <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
            <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
            <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+		   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Clima.html">Clima</a> 
+        
         
         </nav> 
     </div>
@@ -83,26 +85,19 @@
 <!--     <DIV class="item item4" align="center">La mejor zapateria del barrio..... 
         <br><p>Atendida por sus propios duenos</p>
     </DIV> -->
-    <div id="current_date" class="footer"></p>
- 
-        <script>document.getElementById("current_date").innerHTML = Date();  </script>
-        <script>
-            fetch('https://goweather.herokuapp.com/weather/buenos%20aires')
-                .then(res => {
-            return res.json()
-            })
-            .then(post => {
-                const temp = post.temperature ;
-                const tempdes =post.description
-               <--! document.write('El tiempo en Buenos Aires: ' + temp +  ' - ' + tempdes); -->
-                console.log(post.temperature);
-                console.log(post.description);
-             
-            })
-
-
-        </script>
-    </div>
+    <footer class="footer">
+  
+        <div id="current_date" class="footer"></p>
+            <script>
+                    
+    var fecha=new Date().toLocaleDateString();
+    
+    
+                      document.getElementById("current_date").innerHTML = fecha;
+                      </script>
+                  </div>
+    
+    </footer>
     <!-- <div class="footer"><script>document.write(getTemp());</script></div> -->
     <script src="js/funciones.js"></script>  
             
