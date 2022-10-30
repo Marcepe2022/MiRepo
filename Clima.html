@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
-    <link rel="stylesheet" href="clima.css">
+    <title>Zapateria</title>
+    <link rel="icon" href="img/descarga.png">
+    <link rel="stylesheet" href="css/estilosZapa.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+    
 </head>
 
-<body>
-    <form id="form">
-        <input type="text" id="search" placeholder="Ciudad:" autocomplete="off">
-    </form>
-    <main id="main">
+    <body onload="getWeatherByLocation('Buenos Aires')"> 
+        <header class="header">
+			<div class="item item1"><h1>CALZADOS ELEGANTES</h1>
+				<div><img src="img/descarga.png" alt=""></div>
+				<nav >
+			       <a style="background-color: rgba(147, 203, 56, 0.254);" href="index.html">Home</a>
+                   <a style="background-color: rgba(147, 203, 56, 0.254);" href="venta.html">Venta</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="About.html">Acerca de</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Contacto.html">Contacto</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Clima.html">Clima</a> 
+				</nav> 
+			</div>
+		</header> 
+        <form id="form">
+             <!-- <input type="text" id="search" placeholder="Estado del clima " autocomplete="off" > -->
+        </form>
+        <main id="main"  >
 
-    </main>
+        </main>
+        <footer class="footer">
+  
+			<div id="current_date" class="footer"></p>
+				<script>
+                var fecha=new Date().toLocaleDateString();
+            	document.getElementById("current_date").innerHTML = fecha;
+		    	</script>
+			</div>
 
-
-
-
-
-    <script src="clima.js"></script>
+		</footer>
+        <script src="js/tempera.js"></script>
 </body>
-
-</html>
-
-
-
-
-    <script src="app.js"></script>
-</body>
-
 </html>
